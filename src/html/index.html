@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preipop</title>
+    <link rel="stylesheet" href="../../dist/output.css">
+    <script src="//unpkg.com/alpinejs" defer></script>
+</head>
+
+<body class="relative" x-data="{ anyArtistOpen: false }" :class="anyArtistOpen ? 'overflow-hidden' : ''">
+<!-- Marquee section -->
+<section class="overflow-x-hidden flex bg-black text-white sticky top-0 z-30 font-medium" x-show="!anyArtistOpen">
+    <div class="py-2 motion-safe:animate-marquee whitespace-nowrap motion-reduce:mx-auto">
+        <span class="mx-4 text-xl motion-reduce:text-base">TONG</span>
+        <span class="mx-4 text-xl motion-reduce:text-base">Het Kanaal</span>
+        <span class="mx-4 text-xl motion-reduce:text-base">Shitfaced Mermaids</span>
+        <span class="mx-4 text-xl motion-reduce:text-base">DOR</span>
+        <span class="mx-4 text-xl motion-reduce:text-base">Wudu Sjon</span>
+        <span class="mx-4 text-xl motion-reduce:text-base">Electropoëzie</span>
+        <span class="mx-4 text-xl motion-reduce:text-base">Sundown Escape</span>
+        <span class="mx-4 text-xl motion-reduce:text-base">WadAap</span>
+        <span class="mx-4 text-xl motion-reduce:text-base">Rommy Gabay</span>
+        <span class="mx-4 text-xl motion-reduce:text-base">Paracetamøl</span>
+        <span class="mx-4 text-xl motion-reduce:text-base">Them Dirty Dimes</span>
+        <span class="mx-4 text-xl motion-reduce:text-base">Dr. Justice and the Smooth Operators</span>
+    </div>
+
+    <div class="py-2 animate-marquee2 whitespace-nowrap absolute top-0 motion-reduce:hidden">
+        <span class="mx-4 text-xl">TONG</span>
+        <span class="mx-4 text-xl">Het Kanaal</span>
+        <span class="mx-4 text-xl">Shitfaced Mermaids</span>
+        <span class="mx-4 text-xl">DOR</span>
+        <span class="mx-4 text-xl">Wudu Sjon</span>
+        <span class="mx-4 text-xl">Electropoëzie</span>
+        <span class="mx-4 text-xl">Sundown Escape</span>
+        <span class="mx-4 text-xl">WadAap</span>
+        <span class="mx-4 text-xl">Rommy Gabay</span>
+        <span class="mx-4 text-xl">Paracetamøl</span>
+        <span class="mx-4 text-xl">Them Dirty Dimes</span>
+        <span class="mx-4 text-xl">Dr. Justice and the Smooth Operators</span>
+    </div>
+</section>
+
+<div class="absolute top-0 bottom-0 left-0 right-3/4 bg-gradient-to-r from-purple-900 via-black to-black -z-10"></div>
+<div class="absolute top-0 bottom-0 right-0 left-3/4 bg-gradient-to-l from-green-900 via-black to-black -z-10"></div>
+<div class="absolute inset-0 left-1/4 right-1/4 bg-black -z-10"></div>
+
+    
+    <!-- Main Section -->
+    <main>
+        <!-- Hero Section -->
+        <section>
+        <div class="relative flex items-center justify-center h-screen mb-12 overflow-hidden">
+            <div class="flex flex-col items-center min-w-full">
+                <div class="text-white max-w-5xl text-center text-lg z-20">
+                    <img src="../img/Preipop2023.png" class="object-cover w-full">
+                </div>
+                <button
+                    class="py-2 px-5 bg-black text-white rounded-lg border border-green-300 hover:bg-purple-900 text-2xl font-bold mt-4 z-20 w-fit">
+                    <a href="">Bekijk de line-up</a>
+                </button>
+            </div>
+            <video
+              autoplay
+              loop
+              muted
+              class="absolute z-10 w-auto min-w-full min-h-full max-w-none hidden lg:block"
+            >
+              <source
+                src="../img/Rotting Christ - 1275.mp4"
+                type="video/mp4"
+              />
+              Your browser does not support the video tag.
+            </video>
+            <!-- First square -->
+            <img src="../img/Sfeer3.jpg" class="absolute z-10 w-auto min-w-full min-h-full max-w-none object-cover lg:hidden">\
+            <div class="p-4 bg-purple-800 top-[5%] z-20 absolute transform animate-square delay-75"></div>
+            <div class="p-8 bg-green-800 top-[55%] right-[18%] z-20 absolute transform animate-square delay-500"></div>
+            <div class="p-6 bg-purple-800 left-[12.5%] z-20 absolute transform animate-square delay-200"></div>
+            <div class="p-10 bg-purple-800 left-[18%] top-[12%] z-20 absolute transform animate-square delay-300"></div>
+            <div class="p-10 bg-purple-800 right-[18%] top-[17%] z-20 absolute transform animate-square delay-100"></div>
+            <div class="p-12 bg-green-800 left-[20%] bottom-[17%] z-20 absolute transform animate-square delay-1000"></div>
+            
+
+            <!-- Second square -->
+            <div class="p-8 bg-purple-800 right-[42%] bottom-[9%] z-20 absolute transform animate-square2 delay-700"></div>
+            <div class="p-6 bg-green-800 right-[36%] top-[8%] z-20 absolute transform animate-square2 delay-300"></div>
+            <div class="p-10 bg-green-800 left-[14%] top-[35%] z-20 absolute transform animate-square2 delay-500"></div>
+            <div class="p-12 bg-purple-800 left-[31%] bottom-[10%] z-20 absolute transform animate-square2 delay-100"></div>
+            <div class="p-4 bg-green-800 right-[31%] bottom-[16%] z-20 absolute transform animate-square2 delay-500"></div>
+            <div class="p-8 bg-green-800 left-[31%] top-[16%] z-20 absolute transform animate-square2 delay-300"></div>
+        </div>
+        </section>
+
+        <div class="">
+
+        <div class="font-sans isolate flex flex-col">
+
+
+
+            <!-- Organizer section -->
+
+            <section class=" p-4">
+
+                <div class="max-w-4xl mx-auto grid grid-cols-12 px-12 py-12 gap-4">
+
+                    <div class="col-span-12 sm:col-span-6 md:col-span-4 p-2  text-white relative">
+                        <div class="absolute inset-1 bg-gradient-to-r from-purple-900 to-green-900 blur-sm rounded-lg">
+                        </div>
+                        <div class="flex flex-col relative bg-black rounded-lg pb-2">
+                            <img src="../img/alys.png" class=" object-cover">
+                            <div class="flex flex-col items-center">
+                                <h2 class="text-xl font-bold">Alys</h2>
+                                <span class=" italic">Voorzitter</span>
+                                <a href="mailto:info@preipop.nl"
+                                    class="text-purple-400 hover:text-purple-500 text-sm">info@preipop.nl</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-span-12 sm:col-span-6 md:col-span-4 p-2  text-white relative">
+                        <div class="absolute inset-1 bg-gradient-to-r from-purple-900 to-green-900 blur-sm rounded-lg">
+                        </div>
+                        <div class="flex flex-col relative bg-black rounded-lg pb-2">
+                            <img src="../img/gerben.png" class=" object-cover">
+                            <div class="flex flex-col items-center">
+                                <h2 class="text-xl font-bold">Gerben</h2>
+                                <span class=" italic">Secretaris</span>
+                                <a href="mailto:secretaris@preipop.nl"
+                                    class="text-purple-400 hover:text-purple-500 text-sm">secretaris@preipop.nl</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-span-12 sm:col-span-6 md:col-span-4 p-2  text-white relative">
+                        <div class="absolute inset-1 bg-gradient-to-r from-purple-900 to-green-900 blur-sm rounded-lg">
+                        </div>
+                        <div class="flex flex-col relative bg-black rounded-lg pb-2">
+                            <img src="../img/maarten.png" class=" object-cover">
+                            <div class="flex flex-col items-center">
+                                <h2 class="text-xl font-bold">Maarten</h2>
+                                <span class=" italic">Acquisitie</span>
+                                <a href="mailto:sponsoring@preipop.nl"
+                                    class="text-purple-400 hover:text-purple-500 text-sm">sponsoring@preipop.nl</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-span-12 sm:col-span-6 md:col-span-4 p-2  text-white relative">
+                        <div class="absolute inset-1 bg-gradient-to-r from-purple-900 to-green-900 blur-sm rounded-lg">
+                        </div>
+                        <div class="flex flex-col relative bg-black rounded-lg pb-2">
+                            <img src="../img/daniel.png" class=" object-cover">
+                            <div class="flex flex-col items-center">
+                                <h2 class="text-xl font-bold">Daniel</h2>
+                                <span class=" italic">Voorzitter</span>
+                                <a href="mailto:bands@preipop.nl"
+                                    class="text-purple-400 hover:text-purple-500 text-sm">bands@preipop.nl</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-span-12 sm:col-span-6 md:col-span-4 p-2  text-white relative">
+                        <div class="absolute inset-1 bg-gradient-to-r from-purple-900 to-green-900 blur-sm rounded-lg">
+                        </div>
+                        <div class="flex flex-col relative bg-black rounded-lg pb-2">
+                            <img src="../img/ivar.png" class=" object-cover">
+                            <div class="flex flex-col items-center">
+                                <h2 class="text-xl font-bold">Ivar</h2>
+                                <span class=" italic">Pers</span>
+                                <a href="mailto:pers@preipop.nl"
+                                    class="text-purple-400 hover:text-purple-500 text-sm">pers@preipop.nl</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-span-12 sm:col-span-6 md:col-span-4 p-2  text-white relative">
+                        <div class="absolute inset-1 bg-gradient-to-r from-purple-900 to-green-900 blur-sm rounded-lg">
+                        </div>
+                        <div class="flex flex-col relative bg-black rounded-lg pb-2">
+                            <img src="../img/mees.png" class=" object-cover">
+                            <div class="flex flex-col items-center">
+                                <h2 class="text-xl font-bold">Mees</h2>
+                                <span class=" italic">Techniek</span>
+                                <a href="mailto:techniek@preipop.nl"
+                                    class="text-purple-400 hover:text-purple-500 text-sm">techniek@preipop.nl</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-span-12 sm:col-span-6 md:col-span-4 p-2  text-white relative">
+                        <div class="absolute inset-1 bg-gradient-to-r from-purple-900 to-green-900 blur-sm rounded-lg">
+                        </div>
+                        <div class="flex flex-col relative bg-black rounded-lg pb-2">
+                            <img src="../img/Preipop2020.png" class=" object-cover">
+                            <div class="flex flex-col items-center">
+                                <h2 class="text-xl font-bold">Sanne</h2>
+                                <span class=" italic">Penningmeester</span>
+                                <a href="mailto:penningmeester@preipop.nl"
+                                    class="text-purple-400 hover:text-purple-500 text-sm">penningmeester@preipop.nl</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-span-12 sm:col-span-6 md:col-span-4 p-2  text-white relative">
+                        <div class="absolute inset-1 bg-gradient-to-r from-purple-900 to-green-900 blur-sm rounded-lg">
+                        </div>
+                        <div class="flex flex-col relative bg-black rounded-lg pb-2">
+                            <img src="../img/roos.png" class=" object-cover">
+                            <div class="flex flex-col items-center">
+                                <h2 class="text-xl font-bold">Roos</h2>
+                                <span class=" italic">Promo</span>
+                                <a href="mailto:promo@preipop.nl"
+                                    class="text-purple-400 hover:text-purple-500 text-sm">promo@preipop.nl</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-span-12 sm:col-span-6 md:col-span-4 p-2  text-white relative">
+                        <div class="absolute inset-1 bg-gradient-to-r from-purple-900 to-green-900 blur-sm rounded-lg">
+                        </div>
+                        <div class="flex flex-col relative bg-black rounded-lg pb-2">
+                            <img src="../img/tom.png" class=" object-cover">
+                            <div class="flex flex-col items-center">
+                                <h2 class="text-xl font-bold">Tom</h2>
+                                <span class=" italic">Design</span>
+                                <a href="mailto:promo@preipop.nl"
+                                    class="text-purple-400 hover:text-purple-500 text-sm">promo@preipop.nl</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+            <!-- Bands -->
+            <section class=" w-full max-w-screen-2xl mx-auto mb-12">
+                
+                <h1 class="text-center text-5xl font-bold text-white mb-4">Line-up</h1>
+                <div class="w-full grid grid-cols-12 auto-rows-fr px-20">
+                    
+                    <div class="col-span-12 sm:col-span-4 p-8  text-black relative rounded-lg" x-data="{ bandOpen: false }">
+                        <button class="w-full  grid grid-cols-1 hover:cursor-pointer group rounded-lg relative" @click="bandOpen = !bandOpen; anyArtistOpen = !anyArtistOpen" x-transtion>
+                            <div class=" overflow-hidden max-h-max">
+                            <img src="../img/dr-justice.png" class=" object-cover w-full group-hover:scale-105 transition duration-300 rounded-lg opacity-75 max-h-fit">
+                            </div>
+                            <div class="bg-black flex justify-center group-hover:bg-gray-900 py-4 h-full flex-grow">
+                                
+                                <a class="text-white text-3xl font-extrabold p-2 flex justify-center items-center">Dr. Justice and the Smooth Operators</a>
+                            </div>
+                            <div class="absolute -inset-2 bg-gradient-to-r from-green-900 to-purple-900 blur-xl rounded-lg -z-10"></div>
+                        </button>
+                        <div class="fixed inset-0 h-screen bg-gray-900 z-50 bg-opacity-95" x-show="bandOpen" x-transition.duration.400ms.opacity>
+                            <div class="flex justify-center items-center w-full h-full relative">
+                                <div class=" bg-gray-900 rounded-3xl max-w-5xl relative" @click.away="bandOpen = false; anyArtistOpen = false">
+                                    <div class="grid grid-cols-2 p-8 overflow-hidden gap-6">
+                                    <div class="overflow-hidden flex">
+                                        <img src="../img/dr-justice.png" class="object-cover h-fit">
+                                    </div>
+                                    <div class="text-white">
+                                        <h1 class="text-3xl font-bold">Dr. Justice and the Smooth Operators</h1>
+                                        <p>Deze ‘Future Funk’ is een mix van Disco, Electronic, Pop, en Funk. Catchy dansbare songs, die je af en toe laten weg-glibberen of volledig omver blazen. Tight chops, drie geweldige achtergrondzangeressen, slappy bas, keytar en een ever-energetic performance.</p>
+                                    </div>
+                                    </div>
+                                    <div class="absolute -inset-2 bg-gradient-to-r from-green-900 to-purple-900 blur-xl rounded-lg -z-10"></div>
+                                </div>
+                                <button class="absolute top-6 right-6 text-white text-5xl" @click="bandOpen = false; anyArtistOpen = false">X</button>
+                            </div>
+                        </div>
+                
+                    </div>
+                    <div class="col-span-12 sm:col-span-4 p-8  text-black relative rounded-lg" x-data="{ bandOpen: false }">
+                        <button class="w-full  grid grid-cols-1 hover:cursor-pointer group rounded-lg relative" @click="bandOpen = !bandOpen; anyArtistOpen = !anyArtistOpen" x-transtion>
+                            <div class=" overflow-hidden max-h-max">
+                            <img src="../img/Sundown-escape.png" class=" object-cover w-full group-hover:scale-105 transition duration-300 rounded-lg opacity-75 max-h-fit">
+                            </div>
+                            <div class="bg-black flex justify-center group-hover:bg-gray-900 py-4 h-full flex-grow">
+                                
+                                <a class="text-white text-3xl font-extrabold p-2 flex justify-center items-center">Sundown Escape</a>
+                            </div>
+                            <div class="absolute -inset-2 bg-gradient-to-r from-green-900 to-purple-900 blur-xl rounded-lg -z-10"></div>
+                        </button>
+                        <div class="fixed inset-0 h-screen bg-gray-900 z-50 bg-opacity-95" x-show="bandOpen" x-transition.duration.400ms.opacity>
+                            <div class="flex justify-center items-center w-full h-full relative">
+                                <div class=" bg-gray-900 rounded-3xl max-w-5xl relative" @click.away="bandOpen = false; anyArtistOpen = false">
+                                    <div class="grid grid-cols-2 p-8 overflow-hidden gap-6">
+                                    <div class="overflow-hidden flex">
+                                        <img src="../img/Sundown-escape.png" class="object-cover h-fit">
+                                    </div>
+                                    <div class="text-white">
+                                        <h1 class="text-3xl font-bold">Sundown Escape</h1>
+                                        <p>Wat begon als een collectief uit twee broers, is inmiddels een drietal dat de smaak te pakken heeft voor hun eerste optreden hier op PreiPop! Het ecstatische gitarenspel van Sundown Escape helpt je ontsnappen uit de dagelijkse realiteit. De band wordt door ingewijden omschreven als ‘Funk Rock, maar dan wel flink veel rock’</p>
+                                    </div>
+                                    </div>
+                                    <div class="absolute -inset-2 bg-gradient-to-r from-green-900 to-purple-900 blur-xl rounded-lg -z-10"></div>
+                                </div>
+                                <button class="absolute top-6 right-6 text-white text-5xl" @click="bandOpen = false; anyArtistOpen = false">X</button>
+                            </div>
+                        </div>
+                
+                    </div>
+                    <div class="col-span-12 sm:col-span-4 p-8  text-black relative rounded-lg" x-data="{ bandOpen: false }">
+                        <button class="w-full  grid grid-cols-1 hover:cursor-pointer group rounded-lg relative" @click="bandOpen = !bandOpen; anyArtistOpen = !anyArtistOpen" x-transtion>
+                            <div class=" overflow-hidden max-h-max">
+                            <img src="../img/Wadaap.png" class=" object-cover w-full group-hover:scale-105 transition duration-300 rounded-lg opacity-75 max-h-fit">
+                            </div>
+                            <div class="bg-black flex justify-center group-hover:bg-gray-900 py-4 h-full flex-grow">
+                                
+                                <a class="text-white text-3xl font-extrabold p-2 flex justify-center items-center">WadAap</a>
+                            </div>
+                            <div class="absolute -inset-2 bg-gradient-to-r from-green-900 to-purple-900 blur-xl rounded-lg -z-10"></div>
+                        </button>
+                        <div class="fixed inset-0 h-screen bg-gray-900 z-50 bg-opacity-95" x-show="bandOpen" x-transition.duration.400ms.opacity>
+                            <div class="flex justify-center items-center w-full h-full relative">
+                                <div class=" bg-gray-900 rounded-3xl max-w-5xl relative" @click.away="bandOpen = false; anyArtistOpen = false">
+                                    <div class="grid grid-cols-2 p-8 overflow-hidden gap-6">
+                                    <div class="overflow-hidden flex">
+                                        <img src="../img/Wadaap.png" class="object-cover h-fit">
+                                    </div>
+                                    <div class="text-white">
+                                        <h1 class="text-3xl font-bold">WadAap</h1>
+                                        <p>Welkom op de “Planeet van de Aap”… Zo heette het debuutalbum van dit hiphopduo, en daarmee namen ze ons in 2020 op een grote reis: Hoe vinden wij mensen, aapjes een weg door dit leven? Via muziek, connectie met elkaar en vooral goeie vibes maken. Dit is wat het duo WadAap voor ons komt doen, en ook jij mag er bij zijn!</p>
+                                    </div>
+                                    </div>
+                                    <div class="absolute -inset-2 bg-gradient-to-r from-green-900 to-purple-900 blur-xl rounded-lg -z-10"></div>
+                                </div>
+                                <button class="absolute top-6 right-6 text-white text-5xl" @click="bandOpen = false; anyArtistOpen = false">X</button>
+                            </div>
+                        </div>
+                
+                    </div>
+                    <div class="col-span-12 sm:col-span-4 p-8  text-black relative rounded-lg" x-data="{ bandOpen: false }">
+                        <button class="w-full  grid grid-cols-1 hover:cursor-pointer group rounded-lg relative" @click="bandOpen = !bandOpen; anyArtistOpen = !anyArtistOpen" x-transtion>
+                            <div class=" overflow-hidden max-h-max">
+                            <img src="../img/dr-justice.png" class=" object-cover w-full group-hover:scale-105 transition duration-300 rounded-lg opacity-75 max-h-fit">
+                            </div>
+                            <div class="bg-black flex justify-center group-hover:bg-gray-900 py-4 h-full flex-grow">
+                                
+                                <a class="text-white text-3xl font-extrabold p-2 flex justify-center items-center">Dr. Justice and the Smooth Operators</a>
+                            </div>
+                            <div class="absolute -inset-2 bg-gradient-to-r from-green-900 to-purple-900 blur-xl rounded-lg -z-10"></div>
+                        </button>
+                        <div class="fixed inset-0 h-screen bg-gray-900 z-50 bg-opacity-95" x-show="bandOpen" x-transition.duration.400ms.opacity>
+                            <div class="flex justify-center items-center w-full h-full relative">
+                                <div class=" bg-gray-900 rounded-3xl max-w-5xl relative" @click.away="bandOpen = false; anyArtistOpen = false">
+                                    <div class="grid grid-cols-2 p-8 overflow-hidden gap-6">
+                                    <div class="overflow-hidden flex">
+                                        <img src="../img/dr-justice.png" class="object-cover h-fit">
+                                    </div>
+                                    <div class="text-white">
+                                        <h1 class="text-3xl font-bold">Dr. Justice and the Smooth Operators</h1>
+                                        <p>Deze ‘Future Funk’ is een mix van Disco, Electronic, Pop, en Funk. Catchy dansbare songs, die je af en toe laten weg-glibberen of volledig omver blazen. Tight chops, drie geweldige achtergrondzangeressen, slappy bas, keytar en een ever-energetic performance.</p>
+                                    </div>
+                                    </div>
+                                    <div class="absolute -inset-2 bg-gradient-to-r from-green-900 to-purple-900 blur-xl rounded-lg -z-10"></div>
+                                </div>
+                                <button class="absolute top-6 right-6 text-white text-5xl" @click="bandOpen = false; anyArtistOpen = false">X</button>
+                            </div>
+                        </div>
+                
+                    </div>
+                    <div class="col-span-12 sm:col-span-4 p-8  text-black relative rounded-lg" x-data="{ bandOpen: false }">
+                        <button class="w-full  grid grid-cols-1 hover:cursor-pointer group rounded-lg relative" @click="bandOpen = !bandOpen; anyArtistOpen = !anyArtistOpen" x-transtion>
+                            <div class=" overflow-hidden max-h-max">
+                            <img src="../img/Sundown-escape.png" class=" object-cover w-full group-hover:scale-105 transition duration-300 rounded-lg opacity-75 max-h-fit">
+                            </div>
+                            <div class="bg-black flex justify-center group-hover:bg-gray-900 py-4 h-full flex-grow">
+                                
+                                <a class="text-white text-3xl font-extrabold p-2 flex justify-center items-center">Sundown Escape</a>
+                            </div>
+                            <div class="absolute -inset-2 bg-gradient-to-r from-green-900 to-purple-900 blur-xl rounded-lg -z-10"></div>
+                        </button>
+                        <div class="fixed inset-0 h-screen bg-gray-900 z-50 bg-opacity-95" x-show="bandOpen" x-transition.duration.400ms.opacity>
+                            <div class="flex justify-center items-center w-full h-full relative">
+                                <div class=" bg-gray-900 rounded-3xl max-w-5xl relative" @click.away="bandOpen = false; anyArtistOpen = false">
+                                    <div class="grid grid-cols-2 p-8 overflow-hidden gap-6">
+                                    <div class="overflow-hidden flex">
+                                        <img src="../img/Sundown-escape.png" class="object-cover h-fit">
+                                    </div>
+                                    <div class="text-white">
+                                        <h1 class="text-3xl font-bold">Sundown Escape</h1>
+                                        <p>Wat begon als een collectief uit twee broers, is inmiddels een drietal dat de smaak te pakken heeft voor hun eerste optreden hier op PreiPop! Het ecstatische gitarenspel van Sundown Escape helpt je ontsnappen uit de dagelijkse realiteit. De band wordt door ingewijden omschreven als ‘Funk Rock, maar dan wel flink veel rock’</p>
+                                    </div>
+                                    </div>
+                                    <div class="absolute -inset-2 bg-gradient-to-r from-green-900 to-purple-900 blur-xl rounded-lg -z-10"></div>
+                                </div>
+                                <button class="absolute top-6 right-6 text-white text-5xl" @click="bandOpen = false; anyArtistOpen = false">X</button>
+                            </div>
+                        </div>
+                
+                    </div>
+                    <div class="col-span-12 sm:col-span-4 p-8  text-black relative rounded-lg" x-data="{ bandOpen: false }">
+                        <button class="w-full  grid grid-cols-1 hover:cursor-pointer group rounded-lg relative" @click="bandOpen = !bandOpen; anyArtistOpen = !anyArtistOpen" x-transtion>
+                            <div class=" overflow-hidden max-h-max">
+                            <img src="../img/Wadaap.png" class=" object-cover w-full group-hover:scale-105 transition duration-300 rounded-lg opacity-75 max-h-fit">
+                            </div>
+                            <div class="bg-black flex justify-center group-hover:bg-gray-900 py-4 h-full flex-grow">
+                                
+                                <a class="text-white text-3xl font-extrabold p-2 flex justify-center items-center">WadAap</a>
+                            </div>
+                            <div class="absolute -inset-2 bg-gradient-to-r from-green-900 to-purple-900 blur-xl rounded-lg -z-10"></div>
+                        </button>
+                        <div class="fixed inset-0 h-screen bg-gray-900 z-50 bg-opacity-95" x-show="bandOpen" x-transition.duration.400ms.opacity>
+                            <div class="flex justify-center items-center w-full h-full relative">
+                                <div class=" bg-gray-900 rounded-3xl max-w-5xl relative" @click.away="bandOpen = false; anyArtistOpen = false">
+                                    <div class="grid grid-cols-2 p-8 overflow-hidden gap-6">
+                                    <div class="overflow-hidden flex">
+                                        <img src="../img/Wadaap.png" class="object-cover h-fit">
+                                    </div>
+                                    <div class="text-white">
+                                        <h1 class="text-3xl font-bold">WadAap</h1>
+                                        <p>Welkom op de “Planeet van de Aap”… Zo heette het debuutalbum van dit hiphopduo, en daarmee namen ze ons in 2020 op een grote reis: Hoe vinden wij mensen, aapjes een weg door dit leven? Via muziek, connectie met elkaar en vooral goeie vibes maken. Dit is wat het duo WadAap voor ons komt doen, en ook jij mag er bij zijn!</p>
+                                    </div>
+                                    </div>
+                                    <div class="absolute -inset-2 bg-gradient-to-r from-green-900 to-purple-900 blur-xl rounded-lg -z-10"></div>
+                                </div>
+                                <button class="absolute top-6 right-6 text-white text-5xl" @click="bandOpen = false; anyArtistOpen = false">X</button>
+                            </div>
+                        </div>
+                
+                    </div>
+                    
+                </div>
+            </section>
+
+            <section class="max-w-4xl w-full mx-auto my-12 text-white">
+                <h1 class="text-3xl mb-4 text-center">Hoofdsponsor</h1>
+                <div class="grid grid-cols-12 mb-8 mx-6 md:mx-0">
+                    <!-- Lead sponsor -->
+                    <a href="https://www.goldbergescape.nl/" class="col-span-12 h-full w-full bg-gray-900 hover:bg-gray-800 grid md:grid-cols-2 relative py-8 px-4">
+                        <div class="absolute -inset-2 bg-gradient-to-br from-green-900 to-purple-900 blur-sm -z-10"></div>   
+                        <div class="flex justify-center">
+                        <img src="../img/logo-goldberg.png" alt="" class="object-cover px-4 my-auto">
+                        </div>
+                        <div> 
+                        <h1 class="text-3xl font-bold text-center md:text-left mt-2 md:mt-0">Goldberg Escape</h1>   
+                        <p class="text-center md:text-left">Goldberg Escape is een escaperoom met 5 kamers, waarvan 4 verschillende! Goldberg bevindt zich op het Suikerunie-terein, het meest ‘up & coming’ gedeelte van Groningen.
+
+                                Mede dankzij Golderg Escape kunnen we van Preipop 2022 weer een knallende editie maken!
+                            </p>
+                        </div>
+                    </a>
+                        
+                    </div>
+                    <!-- Other sponsors -->
+                    <h1 class="text-3xl mb-4 text-center">Andere Sponsors</h1>
+                    <div class="grid grid-cols-12 mx-4 md:mx-0">
+                        <!-- Lead sponsor -->
+                        <div class="col-span-12 h-full w-full bg-gray-900 relative py-4 px-4">
+                            <div class="absolute -inset-2 bg-gradient-to-br from-green-900 to-purple-900 blur-sm -z-10"></div>   
+                            <div class="grid grid-cols-12 text-white gap-4">
+                                <a href="http://www.matersboekhouding.nl/" class="col-span-6 md:col-span-4 text-center group flex flex-col">
+                                    <div class="flex items-center h-32 mb-2">
+                                    <img src="../img/matersadmin.png" class="object-cover max-h-32 mx-auto">
+                                    </div>
+                                    <span class="font-bold text-lg group-hover:text-purple-300">Maters Administratie & Financieel Advies</span>
+                                </a>
+                                <a href="https://www.passionforpiercing.nl/" class="col-span-6 md:col-span-4 text-center group flex flex-col">
+                                    <div class="flex items-center h-32 mb-2">
+                                    <img src="../img/passion.jpg" class="object-cover max-h-32 mx-auto">
+                                    </div>
+                                    <span class="font-bold text-lg group-hover:text-purple-300">Passion for Piercing</span>
+                                </a>
+                                <a href="https://www.usva.nl/" class="col-span-6 md:col-span-4 text-center group flex flex-col">
+                                    <div class="flex items-center h-32 mb-2">
+                                    <img src="../img/usva.png" class="object-cover max-h-32 mx-auto">
+                                    </div>
+                                    <span class="font-bold text-lg group-hover:text-purple-300">Cultureel Studentencentrum USVA</span>
+                                </a>
+                                <a href="http://www.4roses.nl/" class="col-span-6 md:col-span-4 text-center group flex flex-col">
+                                    <div class="flex items-center h-32 mb-2">
+                                    <img src="../img/four-roses.png" class="object-cover max-h-32 mx-auto">
+                                    </div>
+                                    <span class="font-bold text-lg group-hover:text-purple-300">Four Rose’s</span>
+                                </a>
+                                <a href="http://hetpakhuisgroningen.nl/" class="col-span-6 md:col-span-4 text-center group flex flex-col">
+                                    <div class="flex items-center h-32 mb-2">
+                                    <img src="../img/logopakhuiszwartjpg.jpg" class="object-cover max-h-32 mx-auto">
+                                    </div>
+                                    <span class="font-bold text-lg group-hover:text-purple-300">Het Pakhuis</span>
+                                </a>
+                                <a href="https://www.facebook.com/RGB050/" class="col-span-6 md:col-span-4 text-center group flex flex-col">
+                                    <div class="flex items-center h-32 mb-2">
+                                    <img src="../img/rgb-bar.jpg" class="object-cover max-h-32 mx-auto">
+                                    </div>
+                                    <span class="font-bold text-lg group-hover:text-purple-300">RGB Bar</span>
+                                </a>
+                                <a href="https://www.facebook.com/stadjer/" class="col-span-6 md:col-span-4 text-center group flex flex-col">
+                                    <div class="flex items-center h-32 mb-2">
+                                    <img src="../img/stadjerlogo.png" class="object-cover max-h-32 mx-auto bg-white p-2">
+                                    </div>
+                                    <span class="font-bold text-lg group-hover:text-purple-300">Stadjer</span>
+                                </a>
+                                <a href="http://uglyduck.nl/" class="col-span-6 md:col-span-4 text-center group flex flex-col">
+                                    <div class="flex items-center h-32 mb-2">
+                                    <img src="../img/Ugly-duc.png" class="object-cover max-h-32 mx-auto">
+                                    </div>
+                                    <span class="font-bold text-lg group-hover:text-purple-300">Ugly Duck</span>
+                                </a>
+                                <a href="https://detevredenrookster.nl" class="col-span-6 md:col-span-4 text-center group flex flex-col">
+                                    <div class="flex items-center h-32 mb-2">
+                                    <img src="../img/tevreden-rookster-groningen-logo.png" class="object-cover max-h-32 mx-auto bg-white">
+                                    </div>
+                                    <span class="font-bold text-lg group-hover:text-purple-300">De Tevreden Rookster</span>
+                                </a>
+                            </div>
+                        </div>
+                </div>
+                <div class="flex justify-center mt-4">
+                    <button
+                    class="py-2 px-5 bg-black text-white rounded-lg border border-green-300 hover:bg-purple-900 text-2xl font-bold mt-4 z-20 w-fit">
+                    <a href="">Wordt ook sponsor</a>
+                </button>
+                </div>
+            </section>
+
+        </div>
+
+        </div>
+
+        
+
+        
+
+        </div>
+    </main>
+</div>
+</body>
+
+</html>
