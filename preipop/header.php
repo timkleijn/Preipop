@@ -122,7 +122,8 @@
 <div class="absolute inset-0 left-1/4 right-1/4 bg-black -z-10"></div>
 
 <?php 
-if (empty($GLOBALS["preipop_use_normal_header"])) {
+if ( is_front_page()) {
+//if (empty($GLOBALS["preipop_use_normal_header"])) {
 ?>
 <main>
         <!-- Hero Section -->
