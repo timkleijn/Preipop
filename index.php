@@ -1,1 +1,2 @@
-single.php
+<?php
+// Silence is golden.
