@@ -20,29 +20,413 @@
             <section class=" w-full max-w-screen-2xl mx-auto mb-12">
                 
                 <h1 class="text-center text-4xl font-bold text-white mb-4" id="line-up-h1">Line-up</h1>
-                <div class="max-w-5xl md:mx-auto grid grid-cols-12 mx-6 md:px-12 gap-6">
-                    
-                    <div class="col-span-12 sm:col-span-6   text-black relative rounded-lg" x-data="{ bandOpen: false }">
-                        <button class="w-full  md:grid md:grid-cols-1 hover:cursor-pointer group rounded-lg relative" @click="bandOpen = !bandOpen; anyArtistOpen = !anyArtistOpen" x-transtion>
+		<div class="max-w-5xl md:mx-auto grid grid-cols-12 mx-6 md:px-12 gap-6" id="hallolol">
+
+
+
+
+
+
+
+                <div class="col-span-12 sm:col-span-6   text-black relative rounded-lg" x-data="{ bandOpen: false }">
+                        <button class="w-full  grid grid-cols-1 hover:cursor-pointer group rounded-lg relative" @click="bandOpen = !bandOpen; anyArtistOpen = !anyArtistOpen" x-transtion="">
                             <div class=" overflow-hidden max-h-max">
-                            <img src="https://preipop.nl/preipop_img/dr-justice.png" class="object-cover w-full group-hover:scale-105 transition duration-300 rounded-lg opacity-75 max-h-fit">
+                            <img decoding="async" src="https://preipop.nl/preipop_img/lange-mannen-met-haast.png" class=" object-cover w-full group-hover:scale-105 transition duration-300 rounded-lg opacity-75 max-h-fit">
                             </div>
-                            <div class="bg-black flex justify-center group-hover:bg-gray-900 py-4 ">
-                                
-                                <a class="text-white text-xl md:text-3xl font-extrabold p-2 flex justify-center items-center">Dr. Justice and the Smooth Operators</a>
+                            <div class="bg-black flex justify-center group-hover:bg-gray-900 py-4 h-full flex-grow">
+
+                                <a class="text-white text-3xl font-extrabold p-2 flex justify-center items-center">Lange Mannen met Haast</a>
                             </div>
                             <div class="absolute -inset-2 bg-gradient-to-r from-green-900 to-purple-900 blur-xl rounded-lg -z-10"></div>
                         </button>
-                        <div class="fixed mx-4 inset-0 h-screen bg-gray-900 z-50 bg-opacity-95" x-show="bandOpen" x-transition.duration.400ms.opacity>
+                        <div class="fixed mx-4 inset-0 h-screen bg-gray-900 z-50 bg-opacity-95" x-show="bandOpen" x-transition.duration.400ms.opacity="" style="display: none;">
+                            <div class="flex justify-center items-center w-full h-full relative">
+                                <div class=" bg-gray-900 rounded-3xl max-w-5xl relative" @click.away="bandOpen = false; anyArtistOpen = false">
+                                    <div class="grid grid-cols-1 sm:grid-cols-2 p-8 overflow-hidden gap-6">
+                                    <div class="overflow-hidden flex">
+                                        <img decoding="async" src="https://preipop.nl/preipop_img/lange-mannen-met-haast.png" class="object-cover h-fit">
+                                    </div>
+                                    <div class="text-white">
+					   <h1 class="text-3xl font-bold">Lange Mannen met Haast</h1>
+                                        <p>
+En daar is het dan, het moment waar we natuurlijk allemaal op hebben gewacht. De aankondiging van de Line-up!
+
+Lange Mannen Met Haast raken met hun muziek mensen in een gevoel. Denk daarbij aan: liefde, euforie, herkenning en samenzijn, maar ook aan troost, verdriet en kwetsbaarheid. Dit alles vormt zich door gitaar en percussie, die samenspelen met zang en spokenword.
+
+Zie Lange Mannen met Haast op Donderdag 2 februari om 20.00, Kleine Pelsterstaat 5/5a!</p>
+                                    </div>
+                                    </div>
+                                    <div class="absolute -inset-2 bg-gradient-to-r from-green-900 to-purple-900 blur-xl rounded-lg -z-10"></div>
+                                </div>
+                                <button class="absolute top-6 right-6 text-white text-5xl" @click="bandOpen = false; anyArtistOpen = false">X</button>
+                            </div>
+                        </div>
+
+                    </div>
+		    <div class="col-span-12 sm:col-span-6   text-black relative rounded-lg" x-data="{ bandOpen: false }">
+                        <button class="w-full  grid grid-cols-1 hover:cursor-pointer group rounded-lg relative" @click="bandOpen = !bandOpen; anyArtistOpen = !anyArtistOpen" x-transtion="">
+                            <div class=" overflow-hidden max-h-max">
+                            <img decoding="async" src="https://preipop.nl/preipop_img/rantsoen.png" class=" object-cover w-full group-hover:scale-105 transition duration-300 rounded-lg opacity-75 max-h-fit">
+                            </div>
+                            <div class="bg-black flex justify-center group-hover:bg-gray-900 py-4 h-full flex-grow">
+
+                                <a class="text-white text-3xl font-extrabold p-2 flex justify-center items-center">Rantsoen</a>
+                            </div>
+                            <div class="absolute -inset-2 bg-gradient-to-r from-green-900 to-purple-900 blur-xl rounded-lg -z-10"></div>
+                        </button>
+                        <div class="fixed mx-4 inset-0 h-screen bg-gray-900 z-50 bg-opacity-95" x-show="bandOpen" x-transition.duration.400ms.opacity="" style="display: none;">
+                            <div class="flex justify-center items-center w-full h-full relative">
+                                <div class=" bg-gray-900 rounded-3xl max-w-5xl relative" @click.away="bandOpen = false; anyArtistOpen = false">
+                                    <div class="grid grid-cols-1 sm:grid-cols-2 p-8 overflow-hidden gap-6">
+                                    <div class="overflow-hidden flex">
+                                        <img decoding="async" src="https://preipop.nl/preipop_img/rantsoen.png" class="object-cover h-fit">
+                                    </div>
+                                    <div class="text-white">
+					   <h1 class="text-3xl font-bold">Rantsoen</h1>
+                                        <p>Wat krijg je als je vier mannen met hun instrumenten en wat blikken bier letterlijk opsluit in een muffe repetitieruimte? Juist, RANTSOEN. Oftewel, vier heren uit het hoge noorden met analoge choruspedalen die het jaren ’80 geluid nieuw leven inblazen. Met teksten over ouder worden (Not Anymore), nachtelijke escapades (Night Fishing) en berovingen (The Jeweler) laten ze weten het leven wel te snappen. Na het uitbrengen van de singles Night Fishing (2020) en Not Anymore (2021) moest de groep zich noodgedwongen inhouden, maar intussen zijn ze klaar om Groningen omver te blazen met hun originele alternative rock nummers!</p>
+                                    </div>
+                                    </div>
+                                    <div class="absolute -inset-2 bg-gradient-to-r from-green-900 to-purple-900 blur-xl rounded-lg -z-10"></div>
+                                </div>
+                                <button class="absolute top-6 right-6 text-white text-5xl" @click="bandOpen = false; anyArtistOpen = false">X</button>
+                            </div>
+                        </div>
+
+                    </div>
+		    <div class="col-span-12 sm:col-span-6   text-black relative rounded-lg" x-data="{ bandOpen: false }">
+                        <button class="w-full  grid grid-cols-1 hover:cursor-pointer group rounded-lg relative" @click="bandOpen = !bandOpen; anyArtistOpen = !anyArtistOpen" x-transtion="">
+                            <div class=" overflow-hidden max-h-max">
+                            <img decoding="async" src="https://preipop.nl/preipop_img/kayleigh-beard.png" class=" object-cover w-full group-hover:scale-105 transition duration-300 rounded-lg opacity-75 max-h-fit">
+                            </div>
+                            <div class="bg-black flex justify-center group-hover:bg-gray-900 py-4 h-full flex-grow">
+
+                                <a class="text-white text-3xl font-extrabold p-2 flex justify-center items-center">Kayleigh Beard</a>
+                            </div>
+                            <div class="absolute -inset-2 bg-gradient-to-r from-green-900 to-purple-900 blur-xl rounded-lg -z-10"></div>
+                        </button>
+                        <div class="fixed mx-4 inset-0 h-screen bg-gray-900 z-50 bg-opacity-95" x-show="bandOpen" x-transition.duration.400ms.opacity="" style="display: none;">
+                            <div class="flex justify-center items-center w-full h-full relative">
+                                <div class=" bg-gray-900 rounded-3xl max-w-5xl relative" @click.away="bandOpen = false; anyArtistOpen = false">
+                                    <div class="grid grid-cols-1 sm:grid-cols-2 p-8 overflow-hidden gap-6">
+                                    <div class="overflow-hidden flex">
+                                        <img decoding="async" src="https://preipop.nl/preipop_img/kayleigh-beard.png" class="object-cover h-fit">
+                                    </div>
+                                    <div class="text-white">
+					   <h1 class="text-3xl font-bold">Kayleigh Beard</h1>
+                                        <p>Kaleigh Beard begon met het produceren van muziek in 2015, net voordat ze met haar MADtech Master in kunst en technologie begon. Al vanaf jongs af aan is ze bezig geweest met het opnemen van muziek, zang, gitaar en toetsen, en optreden in bands. Daarnaast was ze bezig met een cariëre in programmeren en web-development. Tijdens haar master kwamen deze passies samen, en ontstond er muziek met een unieke ‘touch’.
+
+Op het podium treed Kayleigh op als one-woman-band, elektronische muziek met stevige beats en dromerige vocalen kenmerken haar act. Je kan het op vele manieren omschrijven, zoals indie elektronisch, deep bass, chillstep, triphop en melancholiek.
+
+Je ziet Kayleigh op 2 februari om 21.30!</p>
+                                    </div>
+                                    </div>
+                                    <div class="absolute -inset-2 bg-gradient-to-r from-green-900 to-purple-900 blur-xl rounded-lg -z-10"></div>
+                                </div>
+                                <button class="absolute top-6 right-6 text-white text-5xl" @click="bandOpen = false; anyArtistOpen = false">X</button>
+                            </div>
+                        </div>
+
+                    </div>
+		    <div class="col-span-12 sm:col-span-6   text-black relative rounded-lg" x-data="{ bandOpen: false }">
+                        <button class="w-full  grid grid-cols-1 hover:cursor-pointer group rounded-lg relative" @click="bandOpen = !bandOpen; anyArtistOpen = !anyArtistOpen" x-transtion="">
+                            <div class=" overflow-hidden max-h-max">
+                            <img decoding="async" src="https://preipop.nl/preipop_img/naduah.png" class=" object-cover w-full group-hover:scale-105 transition duration-300 rounded-lg opacity-75 max-h-fit">
+                            </div>
+                            <div class="bg-black flex justify-center group-hover:bg-gray-900 py-4 h-full flex-grow">
+
+                                <a class="text-white text-3xl font-extrabold p-2 flex justify-center items-center">Naduah</a>
+                            </div>
+                            <div class="absolute -inset-2 bg-gradient-to-r from-green-900 to-purple-900 blur-xl rounded-lg -z-10"></div>
+                        </button>
+                        <div class="fixed mx-4 inset-0 h-screen bg-gray-900 z-50 bg-opacity-95" x-show="bandOpen" x-transition.duration.400ms.opacity="" style="display: none;">
+                            <div class="flex justify-center items-center w-full h-full relative">
+                                <div class=" bg-gray-900 rounded-3xl max-w-5xl relative" @click.away="bandOpen = false; anyArtistOpen = false">
+                                    <div class="grid grid-cols-1 sm:grid-cols-2 p-8 overflow-hidden gap-6">
+                                    <div class="overflow-hidden flex">
+                                        <img decoding="async" src="https://preipop.nl/preipop_img/naduah.png" class="object-cover h-fit">
+                                    </div>
+                                    <div class="text-white">
+					   <h1 class="text-3xl font-bold">Naduah</h1>
+                                        <p>Impulsieve acties zijn helaas niet altijd zonder gevolgen…
+
+Gelukkig ziet Naduah daar de humor van in! Ze schrijft vrolijke teksten vol zelfspot over haar ongeremde avonturen. De sfeer is ongedwongen; er mag gelachen en gedanst worden.
+
+Je ziet Naduah op 2 februari om 22:15!</p>
+                                    </div>
+                                    </div>
+                                    <div class="absolute -inset-2 bg-gradient-to-r from-green-900 to-purple-900 blur-xl rounded-lg -z-10"></div>
+                                </div>
+                                <button class="absolute top-6 right-6 text-white text-5xl" @click="bandOpen = false; anyArtistOpen = false">X</button>
+                            </div>
+                        </div>
+
+                    </div>
+	            <div class="col-span-12 sm:col-span-6   text-black relative rounded-lg" x-data="{ bandOpen: false }">
+                        <button class="w-full  grid grid-cols-1 hover:cursor-pointer group rounded-lg relative" @click="bandOpen = !bandOpen; anyArtistOpen = !anyArtistOpen" x-transtion="">
+                            <div class=" overflow-hidden max-h-max">
+                            <img decoding="async" src="https://preipop.nl/preipop_img/plunder.png" class=" object-cover w-full group-hover:scale-105 transition duration-300 rounded-lg opacity-75 max-h-fit">
+                            </div>
+                            <div class="bg-black flex justify-center group-hover:bg-gray-900 py-4 h-full flex-grow">
+
+                                <a class="text-white text-3xl font-extrabold p-2 flex justify-center items-center">Plunder</a>
+                            </div>
+                            <div class="absolute -inset-2 bg-gradient-to-r from-green-900 to-purple-900 blur-xl rounded-lg -z-10"></div>
+                        </button>
+                        <div class="fixed mx-4 inset-0 h-screen bg-gray-900 z-50 bg-opacity-95" x-show="bandOpen" x-transition.duration.400ms.opacity="" style="display: none;">
+                            <div class="flex justify-center items-center w-full h-full relative">
+                                <div class=" bg-gray-900 rounded-3xl max-w-5xl relative" @click.away="bandOpen = false; anyArtistOpen = false">
+                                    <div class="grid grid-cols-1 sm:grid-cols-2 p-8 overflow-hidden gap-6">
+                                    <div class="overflow-hidden flex">
+                                        <img decoding="async" src="https://preipop.nl/preipop_img/plunder.png" class="object-cover h-fit">
+                                    </div>
+                                    <div class="text-white">
+                                        <h1 class="text-3xl font-bold">Plunder</h1>
+                                        <p>Plunder heet je welkom in haar haven; trek je dansbare pirate-boots aan en grijp je vrienden bij de kraag! Deze pirate-partyfolk band uit Leeuwarden maakt Nederlandstalige liedjes over zwarte schapen, het verlangen naar vrijheid en de zoektocht naar je innerlijke vuur. Plunder laat geen kans voorbijgaan om samen met het publiek een feestje te bouwen en zorgt daarmee altijd voor leven in de brouwerij. Met invloeden uit verschillende stijlen als Ierse folk, balkan, ska en klezmer, zet de groep een energiek en opzwepend eigen geluid neer. Elke plek die dit bijeengeraapte zootje schorem aandoet, wordt gegarandeerd geplunderd!
+
+Je ziet Plunder op 2 februari om 23:00!</p>
+                                    </div>
+                                    </div>
+                                    <div class="absolute -inset-2 bg-gradient-to-r from-green-900 to-purple-900 blur-xl rounded-lg -z-10"></div>
+                                </div>
+                                <button class="absolute top-6 right-6 text-white text-5xl" @click="bandOpen = false; anyArtistOpen = false">X</button>
+                            </div>
+                        </div>
+
+                    </div>
+		    <div class="col-span-12 sm:col-span-6   text-black relative rounded-lg" x-data="{ bandOpen: false }">
+                        <button class="w-full  grid grid-cols-1 hover:cursor-pointer group rounded-lg relative" @click="bandOpen = !bandOpen; anyArtistOpen = !anyArtistOpen" x-transtion="">
+                            <div class=" overflow-hidden max-h-max">
+                            <img decoding="async" src="https://preipop.nl/preipop_img/get-jealous.png" class=" object-cover w-full group-hover:scale-105 transition duration-300 rounded-lg opacity-75 max-h-fit">
+                            </div>
+                            <div class="bg-black flex justify-center group-hover:bg-gray-900 py-4 h-full flex-grow">
+
+                                <a class="text-white text-3xl font-extrabold p-2 flex justify-center items-center">Get Jealous</a>
+                            </div>
+                            <div class="absolute -inset-2 bg-gradient-to-r from-green-900 to-purple-900 blur-xl rounded-lg -z-10"></div>
+                        </button>
+                        <div class="fixed mx-4 inset-0 h-screen bg-gray-900 z-50 bg-opacity-95" x-show="bandOpen" x-transition.duration.400ms.opacity="" style="display: none;">
+                            <div class="flex justify-center items-center w-full h-full relative">
+                                <div class=" bg-gray-900 rounded-3xl max-w-5xl relative" @click.away="bandOpen = false; anyArtistOpen = false">
+                                    <div class="grid grid-cols-1 sm:grid-cols-2 p-8 overflow-hidden gap-6">
+                                    <div class="overflow-hidden flex">
+                                        <img decoding="async" src="https://preipop.nl/preipop_img/get_jealous.png" class="object-cover h-fit">
+                                    </div>
+                                    <div class="text-white">
+                                        <h1 class="text-3xl font-bold">Get Jealous</h1>
+                                        <p>Met Get Jealous is de Donderdag compleet!
+
+Iedereen heeft een mening over Get Jealous. Of je ze nou pop, punk, lief, hard, wild, vrolijk of veel te serieus vindt: Get Jealous zorgt ervoor dat je luistert. Zelfs als je denkt dat je niet van Punk houdt…
+
+Get Jealous sluit de Donderdagavond af om 23.45!</p>
+                                    </div>
+                                    </div>
+                                    <div class="absolute -inset-2 bg-gradient-to-r from-green-900 to-purple-900 blur-xl rounded-lg -z-10"></div>
+                                </div>
+                                <button class="absolute top-6 right-6 text-white text-5xl" @click="bandOpen = false; anyArtistOpen = false">X</button>
+                            </div>
+                        </div>
+
+                    </div>
+		    <div class="col-span-12 sm:col-span-6   text-black relative rounded-lg" x-data="{ bandOpen: false }">
+                        <button class="w-full  grid grid-cols-1 hover:cursor-pointer group rounded-lg relative" @click="bandOpen = !bandOpen; anyArtistOpen = !anyArtistOpen" x-transtion="">
+                            <div class=" overflow-hidden max-h-max">
+                            <img decoding="async" src="https://preipop.nl/preipop_img/jelle-mulder.png" class=" object-cover w-full group-hover:scale-105 transition duration-300 rounded-lg opacity-75 max-h-fit">
+                            </div>
+                            <div class="bg-black flex justify-center group-hover:bg-gray-900 py-4 h-full flex-grow">
+
+                                <a class="text-white text-3xl font-extrabold p-2 flex justify-center items-center">Jelle Mulder</a>
+                            </div>
+                            <div class="absolute -inset-2 bg-gradient-to-r from-green-900 to-purple-900 blur-xl rounded-lg -z-10"></div>
+                        </button>
+                        <div class="fixed mx-4 inset-0 h-screen bg-gray-900 z-50 bg-opacity-95" x-show="bandOpen" x-transition.duration.400ms.opacity="" style="display: none;">
+                            <div class="flex justify-center items-center w-full h-full relative">
+                                <div class=" bg-gray-900 rounded-3xl max-w-5xl relative" @click.away="bandOpen = false; anyArtistOpen = false">
+                                    <div class="grid grid-cols-1 sm:grid-cols-2 p-8 overflow-hidden gap-6">
+                                    <div class="overflow-hidden flex">
+                                        <img decoding="async" src="https://preipop.nl/preipop_img/jelle-mulder.png" class="object-cover h-fit">
+                                    </div>
+                                    <div class="text-white">
+                                        <h1 class="text-3xl font-bold">Jelle Mulder</h1>
+                                        <p>Wie zegt dat Nederlandstalig niet soulvol, groovy en sexy kan zijn?
+
+Jelle mulder, 25-jarige zanger, songwriter, producer en gitarist wil het publiek laten horen dat Nederlandstalige muziek alles kan zijn: ballads, soul, funk, rap. Nu staat er een gloedvolle krachtige live-act met een 6 koppige band. Met deze live-act geeft Jelle je kleine stukjes perspectief op liefde, vriendschap, angst, seks, dans, dromen en verdriet.
+
+Je ziet Jelle Mulder op 3 Februari om 20:00!</p>
+                                    </div>
+                                    </div>
+                                    <div class="absolute -inset-2 bg-gradient-to-r from-green-900 to-purple-900 blur-xl rounded-lg -z-10"></div>
+                                </div>
+                                <button class="absolute top-6 right-6 text-white text-5xl" @click="bandOpen = false; anyArtistOpen = false">X</button>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-span-12 sm:col-span-6   text-black relative rounded-lg" x-data="{ bandOpen: false }">
+                        <button class="w-full  grid grid-cols-1 hover:cursor-pointer group rounded-lg relative" @click="bandOpen = !bandOpen; anyArtistOpen = !anyArtistOpen" x-transtion="">
+                            <div class=" overflow-hidden max-h-max">
+                            <img decoding="async" src="https://preipop.nl/preipop_img/diamonds-honey.png" class=" object-cover w-full group-hover:scale-105 transition duration-300 rounded-lg opacity-75 max-h-fit">
+                            </div>
+                            <div class="bg-black flex justify-center group-hover:bg-gray-900 py-4 h-full flex-grow">
+
+                                <a class="text-white text-3xl font-extrabold p-2 flex justify-center items-center">Diamonds/Honey</a>
+                            </div>
+                            <div class="absolute -inset-2 bg-gradient-to-r from-green-900 to-purple-900 blur-xl rounded-lg -z-10"></div>
+                        </button>
+                        <div class="fixed mx-4 inset-0 h-screen bg-gray-900 z-50 bg-opacity-95" x-show="bandOpen" x-transition.duration.400ms.opacity="" style="display: none;">
+                            <div class="flex justify-center items-center w-full h-full relative">
+                                <div class=" bg-gray-900 rounded-3xl max-w-5xl relative" @click.away="bandOpen = false; anyArtistOpen = false">
+                                    <div class="grid grid-cols-1 sm:grid-cols-2 p-8 overflow-hidden gap-6">
+                                    <div class="overflow-hidden flex">
+                                        <img decoding="async" src="https://preipop.nl/preipop_img/diamonds-honey.png" class="object-cover h-fit">
+                                    </div>
+                                    <div class="text-white">
+                                        <h1 class="text-3xl font-bold">Diamonds/Honey</h1>
+                                        <p>Uitdagende pop-rock met een zoete punch waar je u tegen zegt; dat is Diamonds//Honey.
+
+De Noord-Nederlandse band is het product van vijf rasmuzikanten die elkaar vinden in hun voorliefdes voor rauwe riffs, scherpe teksten en gifzoete esthetiek. Geïnspireerd door acts als Paramore en Wolf Alice brengt frontvrouw Cath Harryvan samen met songwriting partners Ian Wijma en Joost Wegter een attitude die on-Nederlands spannend is en de luisteraar zowel live als op de plaat weet mee te slepen.
+
+Diamonds//Honey brengt de soundtrack voor eenieder dat dansend, schreeuwend en
+springend door het leven wil!
+
+Je ziet Diamonds//Honey op 3 Februari om 20.45 op Preipop!</p>
+                                    </div>
+                                    </div>
+                                    <div class="absolute -inset-2 bg-gradient-to-r from-green-900 to-purple-900 blur-xl rounded-lg -z-10"></div>
+                                </div>
+                                <button class="absolute top-6 right-6 text-white text-5xl" @click="bandOpen = false; anyArtistOpen = false">X</button>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-span-12 sm:col-span-6   text-black relative rounded-lg" x-data="{ bandOpen: false }">
+                        <button class="w-full  grid grid-cols-1 hover:cursor-pointer group rounded-lg relative" @click="bandOpen = !bandOpen; anyArtistOpen = !anyArtistOpen" x-transtion="">
+                            <div class=" overflow-hidden max-h-max">
+                            <img decoding="async" src="https://preipop.nl/preipop_img/cavolo-nero.png" class=" object-cover w-full group-hover:scale-105 transition duration-300 rounded-lg opacity-75 max-h-fit">
+                            </div>
+                            <div class="bg-black flex justify-center group-hover:bg-gray-900 py-4 h-full flex-grow">
+
+                                <a class="text-white text-3xl font-extrabold p-2 flex justify-center items-center">Cavolo Nero</a>
+                            </div>
+                            <div class="absolute -inset-2 bg-gradient-to-r from-green-900 to-purple-900 blur-xl rounded-lg -z-10"></div>
+                        </button>
+                        <div class="fixed mx-4 inset-0 h-screen bg-gray-900 z-50 bg-opacity-95" x-show="bandOpen" x-transition.duration.400ms.opacity="" style="display: none;">
+                            <div class="flex justify-center items-center w-full h-full relative">
+                                <div class=" bg-gray-900 rounded-3xl max-w-5xl relative" @click.away="bandOpen = false; anyArtistOpen = false">
+                                    <div class="grid grid-cols-1 sm:grid-cols-2 p-8 overflow-hidden gap-6">
+                                    <div class="overflow-hidden flex">
+                                        <img decoding="async" src="https://preipop.nl/preipop_img/cavolo-nero.png" class="object-cover h-fit">
+                                    </div>
+                                    <div class="text-white">
+                                        <h1 class="text-3xl font-bold">Cavolo Nero</h1>
+                                        <p>Cavolo Nero is, naast het ingrediënt van allerlei Toscaanse specialiteiten, een zeskoppige band uit Utrecht. Het project is ontstaan uit liefde voor afrobeat en groove-georiënteerde muziek. Met inspiraties als Nu Genea, Khruangbin en Jungle By Night spelen zij psychedelische grooves gecombineerd met indie en disco elementen.
+
+Verwacht vooral veel energie en de drang om mee te dansen op exotische grooves!
+
+Je ziet Cavolo Nero op 3 Februari om 21.30 op Preipop.</p>
+                                    </div>
+                                    </div>
+                                    <div class="absolute -inset-2 bg-gradient-to-r from-green-900 to-purple-900 blur-xl rounded-lg -z-10"></div>
+                                </div>
+                                <button class="absolute top-6 right-6 text-white text-5xl" @click="bandOpen = false; anyArtistOpen = false">X</button>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-span-12 sm:col-span-6   text-black relative rounded-lg" x-data="{ bandOpen: false }">
+                        <button class="w-full  grid grid-cols-1 hover:cursor-pointer group rounded-lg relative" @click="bandOpen = !bandOpen; anyArtistOpen = !anyArtistOpen" x-transtion="">
+                            <div class=" overflow-hidden max-h-max">
+                            <img decoding="async" src="https://preipop.nl/preipop_img/misprint.png" class=" object-cover w-full group-hover:scale-105 transition duration-300 rounded-lg opacity-75 max-h-fit">
+                            </div>
+                            <div class="bg-black flex justify-center group-hover:bg-gray-900 py-4 h-full flex-grow">
+
+                                <a class="text-white text-3xl font-extrabold p-2 flex justify-center items-center">Misprint</a>
+                            </div>
+                            <div class="absolute -inset-2 bg-gradient-to-r from-green-900 to-purple-900 blur-xl rounded-lg -z-10"></div>
+                        </button>
+                        <div class="fixed mx-4 inset-0 h-screen bg-gray-900 z-50 bg-opacity-95" x-show="bandOpen" x-transition.duration.400ms.opacity="" style="display: none;">
+                            <div class="flex justify-center items-center w-full h-full relative">
+                                <div class=" bg-gray-900 rounded-3xl max-w-5xl relative" @click.away="bandOpen = false; anyArtistOpen = false">
+                                    <div class="grid grid-cols-1 sm:grid-cols-2 p-8 overflow-hidden gap-6">
+                                    <div class="overflow-hidden flex">
+                                        <img decoding="async" src="https://preipop.nl/preipop_img/misprint.png" class="object-cover h-fit">
+                                    </div>
+                                    <div class="text-white">
+                                        <h1 class="text-3xl font-bold">Misprint</h1>
+                                        <p>De Nederlandstalige indiepopband Misprint fluistert haar luisteraars gemoedelijke woorden toe om hen vervolgens met gruizig gitaar geweld de moshpit in te sleuren.
+
+Het Nijmeegse viertal zingt, schreeuwt en spuugt over emancipatie, afbakbroodjes en andere alledaagse zaken.
+
+Misprint zie je op 3 februari om 22.15!</p>
+                                    </div>
+                                    </div>
+                                    <div class="absolute -inset-2 bg-gradient-to-r from-green-900 to-purple-900 blur-xl rounded-lg -z-10"></div>
+                                </div>
+                                <button class="absolute top-6 right-6 text-white text-5xl" @click="bandOpen = false; anyArtistOpen = false">X</button>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-span-12 sm:col-span-6 text-black relative rounded-lg" x-data="{ bandOpen: false }">
+                        <button class="w-full  grid grid-cols-1 hover:cursor-pointer group rounded-lg relative" @click="bandOpen = !bandOpen; anyArtistOpen = !anyArtistOpen" x-transtion="">
+                            <div class=" overflow-hidden max-h-max">
+                            <img decoding="async" src="https://preipop.nl/preipop_img/chris-egbers.png" class=" object-cover w-full group-hover:scale-105 transition duration-300 rounded-lg opacity-75 max-h-fit">
+                            </div>
+                            <div class="bg-black flex justify-center group-hover:bg-gray-900 py-4 h-full flex-grow">
+
+                                <a class="text-white text-3xl font-extrabold p-2 flex justify-center items-center">Chris Egbers</a>
+                            </div>
+                            <div class="absolute -inset-2 bg-gradient-to-r from-green-900 to-purple-900 blur-xl rounded-lg -z-10"></div>
+                        </button>
+                        <div class="fixed mx-4 inset-0 h-screen bg-gray-900 z-50 bg-opacity-95" x-show="bandOpen" x-transition.duration.400ms.opacity="" style="display: none;">
+                            <div class="flex justify-center items-center w-full h-full relative">
+                                <div class=" bg-gray-900 rounded-3xl max-w-5xl relative" @click.away="bandOpen = false; anyArtistOpen = false">
+                                    <div class="grid grid-cols-1 sm:grid-cols-2 p-8 overflow-hidden gap-6">
+                                    <div class="overflow-hidden flex">
+                                        <img decoding="async" src="https://preipop.nl/preipop_img/chris-egbers.png" class="object-cover h-fit">
+                                    </div>
+                                    <div class="text-white">
+                                        <h1 class="text-3xl font-bold">Chris Egbers</h1>
+                                        <p>Singer-songwriter Chris Egbers maakt onthaastende folk pop: liedjes met een duidelijke kop en staart, waarin ruimte is om weg te dromen.
+
+Inspiratiebronnen voor hem zijn artiesten als Bertolf, The War On Drugs en John Mayer, de bijzondere verhalen van andere mensen en zijn loopje naar de supermarkt.
+
+Je ziet Chris Egbers op 3 Februari om 23:00!</p>
+                                    </div>
+                                    </div>
+                                    <div class="absolute -inset-2 bg-gradient-to-r from-green-900 to-purple-900 blur-xl rounded-lg -z-10"></div>
+                                </div>
+                                <button class="absolute top-6 right-6 text-white text-5xl" @click="bandOpen = false; anyArtistOpen = false">X</button>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-span-12 sm:col-span-6   text-black relative rounded-lg" x-data="{ bandOpen: false }">
+                        <button class="w-full  md:grid md:grid-cols-1 hover:cursor-pointer group rounded-lg relative" @click="bandOpen = !bandOpen; anyArtistOpen = !anyArtistOpen" x-transtion="">
+                            <div class=" overflow-hidden max-h-max">
+                            <img decoding="async" src="https://preipop.nl/preipop_img/fred-goverde.png" class="object-cover w-full group-hover:scale-105 transition duration-300 rounded-lg opacity-75 max-h-fit">
+                            </div>
+                            <div class="bg-black flex justify-center group-hover:bg-gray-900 py-4 ">
+
+                                <a class="text-white text-xl md:text-3xl font-extrabold p-2 flex justify-center items-center">Fred Goverde</a>
+                            </div>
+                            <div class="absolute -inset-2 bg-gradient-to-r from-green-900 to-purple-900 blur-xl rounded-lg -z-10"></div>
+                        </button>
+                        <div class="fixed mx-4 inset-0 h-screen bg-gray-900 z-50 bg-opacity-95" x-show="bandOpen" x-transition.duration.400ms.opacity="" style="display: none;">
                             <div class="flex justify-center items-center w-full h-full relative">
                                 <div class=" bg-gray-900 rounded-3xl max-w-5xl relative" @click.away="bandOpen = false; anyArtistOpen = false">
                                     <div class="grid sm:grid-cols-2 p-8 overflow-hidden gap-6">
                                     <div class="overflow-hidden flex">
-                                        <img src="https://preipop.nl/preipop_img/dr-justice.png" class="object-cover h-fit">
+                                        <img decoding="async" src="https://preipop.nl/preipop_img/fred-goverde.png" class="object-cover h-fit">
                                     </div>
                                     <div class="text-white">
-                                        <h1 class="text-3xl font-bold">Dr. Justice and the Smooth Operators</h1>
-                                        <p>Deze ‘Future Funk’ is een mix van Disco, Electronic, Pop, en Funk. Catchy dansbare songs, die je af en toe laten weg-glibberen of volledig omver blazen. Tight chops, drie geweldige achtergrondzangeressen, slappy bas, keytar en een ever-energetic performance.</p>
+                                        <h1 class="text-3xl font-bold">Fred Goverde</h1>
+                                        <p>Fred Goverde en zijn band leveren prikkelende Nederlandstalige poëzie met een flinke dosis garagerock-attitude.
+
+Als The Hives, maar dan in je moerstaal.
+Als The Dandy Warhols, maar dan niet stoned.
+Met titels als ‘Je Mag Best Weten Dat Ik Nooit Aan Je Denk’ en ‘Huismus Straatkat Kutwijf’.
+
+Je ziet Fred Goverde op 3 Februari om 23:45!</p>
                                     </div>
                                     </div>
                                     <div class="absolute -inset-2 bg-gradient-to-r from-green-900 to-purple-900 blur-xl rounded-lg -z-10"></div>
@@ -50,167 +434,17 @@
                                 <button class="absolute top-6 right-6 text-white text-5xl" @click="bandOpen = false; anyArtistOpen = false">X</button>
                             </div>
                         </div>
-                
+
                     </div>
-                    <div class="col-span-12 sm:col-span-6 text-black relative rounded-lg" x-data="{ bandOpen: false }">
-                        <button class="w-full  grid grid-cols-1 hover:cursor-pointer group rounded-lg relative" @click="bandOpen = !bandOpen; anyArtistOpen = !anyArtistOpen" x-transtion>
-                            <div class=" overflow-hidden max-h-max">
-                            <img src="https://preipop.nl/preipop_img/Sundown-escape.png" class=" object-cover w-full group-hover:scale-105 transition duration-300 rounded-lg opacity-75 max-h-fit">
-                            </div>
-                            <div class="bg-black flex justify-center group-hover:bg-gray-900 py-4 h-full flex-grow">
-                                
-                                <a class="text-white text-3xl font-extrabold p-2 flex justify-center items-center">Sundown Escape</a>
-                            </div>
-                            <div class="absolute -inset-2 bg-gradient-to-r from-green-900 to-purple-900 blur-xl rounded-lg -z-10"></div>
-                        </button>
-                        <div class="fixed mx-4 inset-0 h-screen bg-gray-900 z-50 bg-opacity-95" x-show="bandOpen" x-transition.duration.400ms.opacity>
-                            <div class="flex justify-center items-center w-full h-full relative">
-                                <div class=" bg-gray-900 rounded-3xl max-w-5xl relative" @click.away="bandOpen = false; anyArtistOpen = false">
-                                    <div class="grid grid-cols-1 sm:grid-cols-2 p-8 overflow-hidden gap-6">
-                                    <div class="overflow-hidden flex">
-                                        <img src="https://preipop.nl/preipop_img/Sundown-escape.png" class="object-cover h-fit">
-                                    </div>
-                                    <div class="text-white">
-                                        <h1 class="text-3xl font-bold">Sundown Escape</h1>
-                                        <p>Wat begon als een collectief uit twee broers, is inmiddels een drietal dat de smaak te pakken heeft voor hun eerste optreden hier op PreiPop! Het ecstatische gitarenspel van Sundown Escape helpt je ontsnappen uit de dagelijkse realiteit. De band wordt door ingewijden omschreven als ‘Funk Rock, maar dan wel flink veel rock’</p>
-                                    </div>
-                                    </div>
-                                    <div class="absolute -inset-2 bg-gradient-to-r from-green-900 to-purple-900 blur-xl rounded-lg -z-10"></div>
-                                </div>
-                                <button class="absolute top-6 right-6 text-white text-5xl" @click="bandOpen = false; anyArtistOpen = false">X</button>
-                            </div>
-                        </div>
-                
+
                     </div>
-                    <div class="col-span-12 sm:col-span-6   text-black relative rounded-lg" x-data="{ bandOpen: false }">
-                        <button class="w-full  grid grid-cols-1 hover:cursor-pointer group rounded-lg relative" @click="bandOpen = !bandOpen; anyArtistOpen = !anyArtistOpen" x-transtion>
-                            <div class=" overflow-hidden max-h-max">
-                            <img src="https://preipop.nl/preipop_img/Wadaap.png" class=" object-cover w-full group-hover:scale-105 transition duration-300 rounded-lg opacity-75 max-h-fit">
-                            </div>
-                            <div class="bg-black flex justify-center group-hover:bg-gray-900 py-4 h-full flex-grow">
-                                
-                                <a class="text-white text-3xl font-extrabold p-2 flex justify-center items-center">WadAap</a>
-                            </div>
-                            <div class="absolute -inset-2 bg-gradient-to-r from-green-900 to-purple-900 blur-xl rounded-lg -z-10"></div>
-                        </button>
-                        <div class="fixed mx-4 inset-0 h-screen bg-gray-900 z-50 bg-opacity-95" x-show="bandOpen" x-transition.duration.400ms.opacity>
-                            <div class="flex justify-center items-center w-full h-full relative">
-                                <div class=" bg-gray-900 rounded-3xl max-w-5xl relative" @click.away="bandOpen = false; anyArtistOpen = false">
-                                    <div class="grid grid-cols-1 sm:grid-cols-2 p-8 overflow-hidden gap-6">
-                                    <div class="overflow-hidden flex">
-                                        <img src="https://preipop.nl/preipop_img/Wadaap.png" class="object-cover h-fit">
-                                    </div>
-                                    <div class="text-white">
-                                        <h1 class="text-3xl font-bold">WadAap</h1>
-                                        <p>Welkom op de “Planeet van de Aap”… Zo heette het debuutalbum van dit hiphopduo, en daarmee namen ze ons in 2020 op een grote reis: Hoe vinden wij mensen, aapjes een weg door dit leven? Via muziek, connectie met elkaar en vooral goeie vibes maken. Dit is wat het duo WadAap voor ons komt doen, en ook jij mag er bij zijn!</p>
-                                    </div>
-                                    </div>
-                                    <div class="absolute -inset-2 bg-gradient-to-r from-green-900 to-purple-900 blur-xl rounded-lg -z-10"></div>
-                                </div>
-                                <button class="absolute top-6 right-6 text-white text-5xl" @click="bandOpen = false; anyArtistOpen = false">X</button>
-                            </div>
-                        </div>
-                
-                    </div>
-                    <div class="col-span-12 sm:col-span-6   text-black relative rounded-lg" x-data="{ bandOpen: false }">
-                        <button class="w-full  grid grid-cols-1 hover:cursor-pointer group rounded-lg relative" @click="bandOpen = !bandOpen; anyArtistOpen = !anyArtistOpen" x-transtion>
-                            <div class=" overflow-hidden max-h-max">
-                            <img src="https://preipop.nl/preipop_img/dr-justice.png" class=" object-cover w-full group-hover:scale-105 transition duration-300 rounded-lg opacity-75 max-h-fit">
-                            </div>
-                            <div class="bg-black flex justify-center group-hover:bg-gray-900 py-4 h-full flex-grow">
-                                
-                                <a class="text-white text-3xl font-extrabold p-2 flex justify-center items-center">Dr. Justice and the Smooth Operators</a>
-                            </div>
-                            <div class="absolute -inset-2 bg-gradient-to-r from-green-900 to-purple-900 blur-xl rounded-lg -z-10"></div>
-                        </button>
-                        <div class="fixed mx-4 inset-0 h-screen bg-gray-900 z-50 bg-opacity-95" x-show="bandOpen" x-transition.duration.400ms.opacity>
-                            <div class="flex justify-center items-center w-full h-full relative">
-                                <div class=" bg-gray-900 rounded-3xl max-w-5xl relative" @click.away="bandOpen = false; anyArtistOpen = false">
-                                    <div class="grid grid-cols-1 sm:grid-cols-2 p-8 overflow-hidden gap-6">
-                                    <div class="overflow-hidden flex">
-                                        <img src="https://preipop.nl/preipop_img/dr-justice.png" class="object-cover h-fit">
-                                    </div>
-                                    <div class="text-white">
-                                        <h1 class="text-3xl font-bold">Dr. Justice and the Smooth Operators</h1>
-                                        <p>Deze ‘Future Funk’ is een mix van Disco, Electronic, Pop, en Funk. Catchy dansbare songs, die je af en toe laten weg-glibberen of volledig omver blazen. Tight chops, drie geweldige achtergrondzangeressen, slappy bas, keytar en een ever-energetic performance.</p>
-                                    </div>
-                                    </div>
-                                    <div class="absolute -inset-2 bg-gradient-to-r from-green-900 to-purple-900 blur-xl rounded-lg -z-10"></div>
-                                </div>
-                                <button class="absolute top-6 right-6 text-white text-5xl" @click="bandOpen = false; anyArtistOpen = false">X</button>
-                            </div>
-                        </div>
-                
-                    </div>
-                    <div class="col-span-12 sm:col-span-6   text-black relative rounded-lg" x-data="{ bandOpen: false }">
-                        <button class="w-full  grid grid-cols-1 hover:cursor-pointer group rounded-lg relative" @click="bandOpen = !bandOpen; anyArtistOpen = !anyArtistOpen" x-transtion>
-                            <div class=" overflow-hidden max-h-max">
-                            <img src="https://preipop.nl/preipop_img/Sundown-escape.png" class=" object-cover w-full group-hover:scale-105 transition duration-300 rounded-lg opacity-75 max-h-fit">
-                            </div>
-                            <div class="bg-black flex justify-center group-hover:bg-gray-900 py-4 h-full flex-grow">
-                                
-                                <a class="text-white text-3xl font-extrabold p-2 flex justify-center items-center">Sundown Escape</a>
-                            </div>
-                            <div class="absolute -inset-2 bg-gradient-to-r from-green-900 to-purple-900 blur-xl rounded-lg -z-10"></div>
-                        </button>
-                        <div class="fixed mx-4 inset-0 h-screen bg-gray-900 z-50 bg-opacity-95" x-show="bandOpen" x-transition.duration.400ms.opacity>
-                            <div class="flex justify-center items-center w-full h-full relative">
-                                <div class=" bg-gray-900 rounded-3xl max-w-5xl relative" @click.away="bandOpen = false; anyArtistOpen = false">
-                                    <div class="grid grid-cols-1 sm:grid-cols-2 p-8 overflow-hidden gap-6">
-                                    <div class="overflow-hidden flex">
-                                        <img src="https://preipop.nl/preipop_img/Sundown-escape.png" class="object-cover h-fit">
-                                    </div>
-                                    <div class="text-white">
-                                        <h1 class="text-3xl font-bold">Sundown Escape</h1>
-                                        <p>Wat begon als een collectief uit twee broers, is inmiddels een drietal dat de smaak te pakken heeft voor hun eerste optreden hier op PreiPop! Het ecstatische gitarenspel van Sundown Escape helpt je ontsnappen uit de dagelijkse realiteit. De band wordt door ingewijden omschreven als ‘Funk Rock, maar dan wel flink veel rock’</p>
-                                    </div>
-                                    </div>
-                                    <div class="absolute -inset-2 bg-gradient-to-r from-green-900 to-purple-900 blur-xl rounded-lg -z-10"></div>
-                                </div>
-                                <button class="absolute top-6 right-6 text-white text-5xl" @click="bandOpen = false; anyArtistOpen = false">X</button>
-                            </div>
-                        </div>
-                
-                    </div>
-                    <div class="col-span-12 sm:col-span-6   text-black relative rounded-lg" x-data="{ bandOpen: false }">
-                        <button class="w-full  grid grid-cols-1 hover:cursor-pointer group rounded-lg relative" @click="bandOpen = !bandOpen; anyArtistOpen = !anyArtistOpen" x-transtion>
-                            <div class=" overflow-hidden max-h-max">
-                            <img src="https://preipop.nl/preipop_img/Wadaap.png" class=" object-cover w-full group-hover:scale-105 transition duration-300 rounded-lg opacity-75 max-h-fit">
-                            </div>
-                            <div class="bg-black flex justify-center group-hover:bg-gray-900 py-4 h-full flex-grow">
-                                
-                                <a class="text-white text-3xl font-extrabold p-2 flex justify-center items-center">WadAap</a>
-                            </div>
-                            <div class="absolute -inset-2 bg-gradient-to-r from-green-900 to-purple-900 blur-xl rounded-lg -z-10"></div>
-                        </button>
-                        <div class="fixed mx-4 inset-0 h-screen bg-gray-900 z-50 bg-opacity-95" x-show="bandOpen" x-transition.duration.400ms.opacity>
-                            <div class="flex justify-center items-center w-full h-full relative">
-                                <div class=" bg-gray-900 rounded-3xl max-w-5xl relative" @click.away="bandOpen = false; anyArtistOpen = false">
-                                    <div class="grid grid-cols-1 sm:grid-cols-2 p-8 overflow-hidden gap-6">
-                                    <div class="overflow-hidden flex">
-                                        <img src="https://preipop.nl/preipop_img/Wadaap.png" class="object-cover h-fit">
-                                    </div>
-                                    <div class="text-white">
-                                        <h1 class="text-3xl font-bold">WadAap</h1>
-                                        <p>Welkom op de “Planeet van de Aap”… Zo heette het debuutalbum van dit hiphopduo, en daarmee namen ze ons in 2020 op een grote reis: Hoe vinden wij mensen, aapjes een weg door dit leven? Via muziek, connectie met elkaar en vooral goeie vibes maken. Dit is wat het duo WadAap voor ons komt doen, en ook jij mag er bij zijn!</p>
-                                    </div>
-                                    </div>
-                                    <div class="absolute -inset-2 bg-gradient-to-r from-green-900 to-purple-900 blur-xl rounded-lg -z-10"></div>
-                                </div>
-                                <button class="absolute top-6 right-6 text-white text-5xl" @click="bandOpen = false; anyArtistOpen = false">X</button>
-                            </div>
-                        </div>
-                
-                    </div>
-                    
-                </div>
             </section>
 
             <section class="max-w-4xl w-full mx-auto my-12 text-white">
-                <h1 class="text-3xl mb-4 text-center">Hoofdsponsor</h1>
-                <div class="grid grid-cols-12 mb-8 mx-6 md:mx-0">
+                <!--<h1 class="text-3xl mb-4 text-center">Hoofdsponsor</h1>
+		<div class="grid grid-cols-12 mb-8 mx-6 md:mx-0">-->
                     <!-- Lead sponsor -->
-                    <a href="https://www.goldbergescape.nl/" class="col-span-12 h-full w-full bg-gray-900 hover:bg-gray-800 grid md:grid-cols-2 relative py-8 px-4">
+                    <!--<a href="https://www.goldbergescape.nl/" class="col-span-12 h-full w-full bg-gray-900 hover:bg-gray-800 grid md:grid-cols-2 relative py-8 px-4">
                         <div class="absolute -inset-2 bg-gradient-to-br from-green-900 to-purple-900 blur-sm -z-10"></div>   
                         <div class="flex justify-center">
                         <img src="https://preipop.nl/preipop_img/logo-goldberg.png" alt="" class="object-cover px-4 my-auto">
@@ -224,77 +458,41 @@
                         </div>
                     </a>
                         
-                    </div>
+		    </div>-->
                     <!-- Other sponsors -->
-                    <h1 class="text-3xl mb-4 text-center">Andere Sponsors</h1>
-                    <div class="grid grid-cols-12 mx-4 md:mx-0">
+                    <h1 class="text-3xl mb-4 text-center">Sponsoren</h1>
+                    <div class="grid grid-cols-3 mx-4 md:mx-0">
                         <!-- Lead sponsor -->
-                        <div class="col-span-12 h-full w-full bg-gray-900 relative py-4 px-4">
+                        <div class="col-span-3 h-full w-full bg-gray-900 relative py-4 px-4">
                             <div class="absolute -inset-2 bg-gradient-to-br from-green-900 to-purple-900 blur-sm -z-10"></div>   
                             <div class="grid grid-cols-12 text-white gap-4">
-                                <a href="http://www.matersboekhouding.nl/" class="col-span-6 md:col-span-4 text-center group flex flex-col">
-                                    <div class="flex items-center h-32 mb-2">
-                                    <img src="https://preipop.nl/preipop_img/matersadmin.png" class="object-cover max-h-32 mx-auto">
-                                    </div>
-                                    <span class="font-bold text-lg group-hover:text-purple-300">Maters Administratie & Financieel Advies</span>
-                                </a>
-                                <a href="https://www.passionforpiercing.nl/" class="col-span-6 md:col-span-4 text-center group flex flex-col">
-                                    <div class="flex items-center h-32 mb-2">
-                                    <img src="https://preipop.nl/preipop_img/passion.jpg" class="object-cover max-h-32 mx-auto">
-                                    </div>
-                                    <span class="font-bold text-lg group-hover:text-purple-300">Passion for Piercing</span>
-                                </a>
                                 <a href="https://www.usva.nl/" class="col-span-6 md:col-span-4 text-center group flex flex-col">
                                     <div class="flex items-center h-32 mb-2">
                                     <img src="https://preipop.nl/preipop_img/usva.png" class="object-cover max-h-32 mx-auto">
                                     </div>
                                     <span class="font-bold text-lg group-hover:text-purple-300">Cultureel Studentencentrum USVA</span>
                                 </a>
-                                <a href="http://www.4roses.nl/" class="col-span-6 md:col-span-4 text-center group flex flex-col">
+                                <a href="http://heineken.nl/" class="col-span-6 md:col-span-4 text-center group flex flex-col">
                                     <div class="flex items-center h-32 mb-2">
-                                    <img src="https://preipop.nl/preipop_img/four-roses.png" class="object-cover max-h-32 mx-auto">
+                                    <img src="https://preipop.nl/preipop_img/heineken.png" class="object-cover max-h-32 mx-auto">
                                     </div>
-                                    <span class="font-bold text-lg group-hover:text-purple-300">Four Rose’s</span>
+                                    <span class="font-bold text-lg group-hover:text-purple-300">Heineken</span>
                                 </a>
-                                <a href="http://hetpakhuisgroningen.nl/" class="col-span-6 md:col-span-4 text-center group flex flex-col">
+                                <a href="https://www.recordsonvinyl.nl/" class="col-span-6 md:col-span-4 text-center group flex flex-col">
                                     <div class="flex items-center h-32 mb-2">
-                                    <img src="https://preipop.nl/preipop_img/logopakhuiszwartjpg.jpg" class="object-cover max-h-32 mx-auto">
+                                    <img src="https://preipop.nl/preipop_img/records-on-vinyll.png" class="object-cover max-h-32 mx-auto bg-white">
                                     </div>
-                                    <span class="font-bold text-lg group-hover:text-purple-300">Het Pakhuis</span>
-                                </a>
-                                <a href="https://www.facebook.com/RGB050/" class="col-span-6 md:col-span-4 text-center group flex flex-col">
-                                    <div class="flex items-center h-32 mb-2">
-                                    <img src="https://preipop.nl/preipop_img/rgb-bar.jpg" class="object-cover max-h-32 mx-auto">
-                                    </div>
-                                    <span class="font-bold text-lg group-hover:text-purple-300">RGB Bar</span>
-                                </a>
-                                <a href="https://www.facebook.com/stadjer/" class="col-span-6 md:col-span-4 text-center group flex flex-col">
-                                    <div class="flex items-center h-32 mb-2">
-                                    <img src="https://preipop.nl/preipop_img/stadjerlogo.png" class="object-cover max-h-32 mx-auto bg-white p-2">
-                                    </div>
-                                    <span class="font-bold text-lg group-hover:text-purple-300">Stadjer</span>
-                                </a>
-                                <a href="http://uglyduck.nl/" class="col-span-6 md:col-span-4 text-center group flex flex-col">
-                                    <div class="flex items-center h-32 mb-2">
-                                    <img src="https://preipop.nl/preipop_img/Ugly-duc.png" class="object-cover max-h-32 mx-auto">
-                                    </div>
-                                    <span class="font-bold text-lg group-hover:text-purple-300">Ugly Duck</span>
-                                </a>
-                                <a href="https://detevredenrookster.nl" class="col-span-6 md:col-span-4 text-center group flex flex-col">
-                                    <div class="flex items-center h-32 mb-2">
-                                    <img src="https://preipop.nl/preipop_img/tevreden-rookster-groningen-logo.png" class="object-cover max-h-32 mx-auto bg-white">
-                                    </div>
-                                    <span class="font-bold text-lg group-hover:text-purple-300">De Tevreden Rookster</span>
+                                    <span class="font-bold text-lg group-hover:text-purple-300">Records on Vinyl</span>
                                 </a>
                             </div>
                         </div>
                 </div>
-                <div class="flex justify-center mt-4">
+                <!--<div class="flex justify-center mt-4">
                     <button
                     class="py-2 px-5 bg-black text-white rounded-lg border border-green-300 hover:bg-purple-900 text-2xl font-bold mt-4 z-20 w-fit">
                     <a href="">Wordt ook sponsor</a>
                 </button>
-                </div>
+		</div>-->
             </section>
 
             

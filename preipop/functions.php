@@ -14,3 +14,4 @@ function preipop_register_styles()
 
 add_action("wp_enqueue_scripts", "preipop_register_styles");
 
+add_theme_support( 'post-thumbnails' );

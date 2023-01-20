@@ -52,20 +52,20 @@
                         clip-rule="evenodd"></path>
                 </svg>
             </button>
-            <div class="w-full md:block md:w-auto" id="navbar-default" :class="navopen === true ? '' : 'hidden'"
+            <div class="menu w-full md:block md:w-auto" id="navbar-default" :class="navopen === true ? '' : 'hidden'"
                 x-cloak>
 <?php
-	/*wp_nav_menu(
+	wp_nav_menu(
 		array(
-			"menu" => "primary",
+			"menu" => "Hoofdmenu",
 			"container" => "",
 			"theme_location" => "primary",
 			//"menu_class" => "",
 			//"items_wrap" => '<ul id="" class="%2$s">%3$s</ul>'
 		)
-	);*/
+	);
 ?>
-                <ul class="flex flex-col w-full p-4 mt-4 border border-gray-100 rounded-lg md:flex-row md:space-x-8 md:mt-0 items-center text-lg  md:border-0 ">
+                <!--<ul class="flex flex-col w-full p-4 mt-4 border border-gray-100 rounded-lg md:flex-row md:space-x-8 md:mt-0 items-center text-lg  md:border-0 ">
                     <li class="w-full md:w-fit text-center">
                         <a href="./index.html"
                             class="block py-2 w-full md:w-fit md:px-4 hover:bg-gray-900 rounded md:bg-transparent text-white font-bold md:hover:bg-purple-900"
@@ -80,7 +80,7 @@
                         <svg fill="#ffffff" version="1.1" id="Layer_1" class="h-6 w-6 stroke-white" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 169.063 169.063" xml:space="preserve"><g  stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <path d="M122.406,0H46.654C20.929,0,0,20.93,0,46.655v75.752c0,25.726,20.929,46.655,46.654,46.655h75.752 c25.727,0,46.656-20.93,46.656-46.655V46.655C169.063,20.93,148.133,0,122.406,0z M154.063,122.407 c0,17.455-14.201,31.655-31.656,31.655H46.654C29.2,154.063,15,139.862,15,122.407V46.655C15,29.201,29.2,15,46.654,15h75.752 c17.455,0,31.656,14.201,31.656,31.655V122.407z"></path> <path d="M84.531,40.97c-24.021,0-43.563,19.542-43.563,43.563c0,24.02,19.542,43.561,43.563,43.561s43.563-19.541,43.563-43.561 C128.094,60.512,108.552,40.97,84.531,40.97z M84.531,113.093c-15.749,0-28.563-12.812-28.563-28.561 c0-15.75,12.813-28.563,28.563-28.563s28.563,12.813,28.563,28.563C113.094,100.281,100.28,113.093,84.531,113.093z"></path> <path d="M129.921,28.251c-2.89,0-5.729,1.17-7.77,3.22c-2.051,2.04-3.23,4.88-3.23,7.78c0,2.891,1.18,5.73,3.23,7.78 c2.04,2.04,4.88,3.22,7.77,3.22c2.9,0,5.73-1.18,7.78-3.22c2.05-2.05,3.22-4.89,3.22-7.78c0-2.9-1.17-5.74-3.22-7.78 C135.661,29.421,132.821,28.251,129.921,28.251z"></path> </g> </g></svg>
                         </a>
                     </li>
-                </ul>
+                </ul>-->
             </div>
         </div>
     </nav>
@@ -139,7 +139,7 @@ if ( is_front_page()) {
                     </h1>
                 <button
                     class="py-2 px-5 bg-black text-white rounded-lg border border-green-300 hover:bg-purple-900 text-2xl font-bold mt-4 z-20 w-fit">
-                    <a href="">Bekijk de line-up</a>
+                    <a href="#line-up-h1">Bekijk de line-up</a>
                 </button>
             </div>
             <video
