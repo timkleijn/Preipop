@@ -87,33 +87,34 @@
     <!-- Marquee section -->
 <section class="overflow-x-hidden flex bg-black text-white sticky top-20 md:top-20 z-30 font-medium" x-show="!anyArtistOpen" :class="navopen ? 'hidden' : ''">
     <div class="py-2 motion-safe:animate-marquee whitespace-nowrap motion-reduce:mx-auto">
-        <span class="mx-4 text-xl motion-reduce:text-base">TONG</span>
-        <span class="mx-4 text-xl motion-reduce:text-base">Het Kanaal</span>
-        <span class="mx-4 text-xl motion-reduce:text-base">Shitfaced Mermaids</span>
-        <span class="mx-4 text-xl motion-reduce:text-base">DOR</span>
-        <span class="mx-4 text-xl motion-reduce:text-base">Wudu Sjon</span>
-        <span class="mx-4 text-xl motion-reduce:text-base">Electropoëzie</span>
-        <span class="mx-4 text-xl motion-reduce:text-base">Sundown Escape</span>
-        <span class="mx-4 text-xl motion-reduce:text-base">WadAap</span>
-        <span class="mx-4 text-xl motion-reduce:text-base">Rommy Gabay</span>
-        <span class="mx-4 text-xl motion-reduce:text-base">Paracetamøl</span>
-        <span class="mx-4 text-xl motion-reduce:text-base">Them Dirty Dimes</span>
-        <span class="mx-4 text-xl motion-reduce:text-base">Dr. Justice and the Smooth Operators</span>
+<?php
+$bands = [
+	"Lange Mannen met Haast",
+	"Rantsoen",
+	"Kayleigh Beard",
+	"Naduah",
+	"Plunder",
+	"Get Jealous",
+	"Jelle Mulder",
+	"Diamonds//Honey",
+	"Cavolo Nero",
+	"Misprint",
+	"Chris Egbers",
+	"Fred Goverde"
+];
+
+foreach ($bands as $band) {
+	printf('<span class="mx-4 text-xl motion-reduce:text-base">%s</span>', $band);
+}
+?>
     </div>
 
     <div class="py-2 animate-marquee2 whitespace-nowrap absolute top-0 motion-reduce:hidden">
-        <span class="mx-4 text-xl">TONG</span>
-        <span class="mx-4 text-xl">Het Kanaal</span>
-        <span class="mx-4 text-xl">Shitfaced Mermaids</span>
-        <span class="mx-4 text-xl">DOR</span>
-        <span class="mx-4 text-xl">Wudu Sjon</span>
-        <span class="mx-4 text-xl">Electropoëzie</span>
-        <span class="mx-4 text-xl">Sundown Escape</span>
-        <span class="mx-4 text-xl">WadAap</span>
-        <span class="mx-4 text-xl">Rommy Gabay</span>
-        <span class="mx-4 text-xl">Paracetamøl</span>
-        <span class="mx-4 text-xl">Them Dirty Dimes</span>
-        <span class="mx-4 text-xl">Dr. Justice and the Smooth Operators</span>
+<?php
+foreach ($bands as $band) {
+	printf('<span class="mx-4 text-xl motion-reduce:text-base">%s</span>', $band);
+}
+?>
     </div>
 </section>
 
